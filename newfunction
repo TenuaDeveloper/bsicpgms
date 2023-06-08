@@ -1,0 +1,31 @@
+useEffect(() => {
+    const orderKeys = ["flight", "inspiration", "pickupDrop", "uncategorized"];
+    Object.keys(data).map((
+      key /** this key is containing order-id now we need to map actual cart data */
+    ) => {
+      /**
+       * here key is containing order-id
+       * data[key] will have one order detials which will contain all kind of order data like "flight", "inspiration", "pickupDrop", "uncategorized"
+       */
+      orderKeys.map((orderkey) => {
+        /**
+         * this will only have categrorised data like filght inspiration etc
+         */
+
+        /**
+         * Now we need to map categrorised data becoz it should contain a array list
+         */
+        Object.keys(data[key][orderkey]).map((
+          _key /** this key will contain like flight-id or inspiration-location etc */
+        ) => {
+          data[key][orderkey][_key].map(
+            (
+              item
+            ) /** this will have all details witch you are looking for */ => {
+              console.log(item);
+            }
+          );
+        });
+      });
+    });
+  });
