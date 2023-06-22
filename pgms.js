@@ -61,4 +61,4 @@ const input1 = [
 
 const input3 = "Every developer likes to mix kubernetes and javascript"
 
-let expectedOutput = input3.split('').
+let expectedOutput = input3.split('')
