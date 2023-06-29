@@ -192,7 +192,11 @@ add(1,2,3)
 // //In Case if the Value is not Available then we can set default value as well
 // const[i = 1,j = 1,[k = 1,l=2,m =3]] = nested
 // console.log(i,j,k,l,m)
+//Iterate all the item in the restaurant
 
+for(item in restaurant){
+    console.log(restaurant[item])
+}
 
 
 
