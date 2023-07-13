@@ -145,3 +145,21 @@ const [user1,user2,user3] = users
 
 const [{firstName},,{gender}] = users
 console.log("firstName :",firstName,"Gender : ",gender)
+
+//Object Destructure
+
+const person12 = {
+    firstName : "Deepak",
+    lastName : "Singh",
+    age : 34 ,
+    address : {
+          flatNo: "C026",
+          pinCode : 562106
+    }
+}
+
+function printPersonData({firstName,address}){
+       console.log(firstName,address.flatNo)
+}
+
+printPersonData(person12)

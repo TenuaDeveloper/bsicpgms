@@ -87,3 +87,30 @@ function myFuncR(){
 
 const ans = myFuncR()
 ans()
+//CallBack Functions
+//WhenEver a function is taking a parameter as a function and we are calling that function using parameter 
+//That is called callBack Function
+
+function test(){
+ console.log("Hello i am Call Back function ")
+}
+function myTest(callfunc){
+    console.log("My test call Back")
+    console.log(callfunc)
+    callfunc()
+}
+myTest(test)
+
+//function returning Function 
+
+
+function returnFunction(){
+    function hello(){
+        console.log("I am returned Function")
+    }
+    return hello
+}
+
+const result = returnFunction()
+
+result(),
